@@ -4,10 +4,11 @@ import {StyleSheet, View} from 'react-native';
 // import DDLPickerComponent from './components/ddpickerComponent';
 // import ExpensesForm from './components/expensesform';
 // import DDLUser from './components/ddluser';
-// import APICallComponent from './components/apicallcomponent';
+import APICallComponent from './components/apicallcomponent';
 // import SMSComponent from './components/smscomponent';
 // import ContactsComponent from './components/contactscomponent';
-import CameraAccessComponent from './components/cameraaccess';
+// import CameraAccessComponent from './components/cameraaccess';
+  import FlatListComponent from './components/flatlistcomponent';
 function App(): JSX.Element {
   // const data = ['Maharashtra', 'Gujarat', 'Kerla'];
   // return <ExpensesForm />;
@@ -15,7 +16,8 @@ function App(): JSX.Element {
   // return <APICallComponent />;
   // return <SMSComponent />;
   // return <ContactsComponent />;
-  return <CameraAccessComponent />;
+  // return <CameraAccessComponent />;
+   return <FlatListComponent />;
 }
 
 const styles = StyleSheet.create({

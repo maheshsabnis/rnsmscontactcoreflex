@@ -13,10 +13,12 @@ const SMSComponent = () => {
     }
     SendSMS.send(
       {
+        /* SMS Details */
         body: bodySMS,
         recipients: [mobileNumber],
         successTypes: ['send', 'queued'],
       },
+      /* SMS Callback that will specifiy the Status of SMS */
       (completed, cancelled, error) => {
         if (completed) {
           Alert.alert('SMS sent completed');
